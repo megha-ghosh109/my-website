@@ -2,301 +2,320 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="This website is build to spread knowledge about my projects" />  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MEGHA GHOSH-website</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megha Ghosh Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      <style media="all" id="fa-v4-font-face">/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-solid-900.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-solid-900.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-brands-400.ttf) format("truetype")}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-regular-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-regular-400.ttf) format("truetype");unicode-range:u+f003,u+f006,u+f014,u+f016-f017,u+f01a-f01b,u+f01d,u+f022,u+f03e,u+f044,u+f046,u+f05c-f05d,u+f06e,u+f070,u+f087-f088,u+f08a,u+f094,u+f096-f097,u+f09d,u+f0a0,u+f0a2,u+f0a4-f0a7,u+f0c5,u+f0c7,u+f0e5-f0e6,u+f0eb,u+f0f6-f0f8,u+f10c,u+f114-f115,u+f118-f11a,u+f11c-f11d,u+f133,u+f147,u+f14e,u+f150-f152,u+f185-f186,u+f18e,u+f190-f192,u+f196,u+f1c1-f1c9,u+f1d9,u+f1db,u+f1e3,u+f1ea,u+f1f7,u+f1f9,u+f20a,u+f247-f248,u+f24a,u+f24d,u+f255-f25b,u+f25d,u+f271-f274,u+f278,u+f27b,u+f28c,u+f28e,u+f29c,u+f2b5,u+f2b7,u+f2ba,u+f2bc,u+f2be,u+f2c0-f2c1,u+f2c3,u+f2d0,u+f2d2,u+f2d4,u+f2dc}@font-face{font-family:"FontAwesome";font-display:block;src:url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-v4compatibility.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v6.5.1/webfonts/free-fa-v4compatibility.ttf) format("truetype");unicode-range:u+f041,u+f047,u+f065-f066,u+f07d-f07e,u+f080,u+f08b,u+f08e,u+f090,u+f09a,u+f0ac,u+f0ae,u+f0b2,u+f0d0,u+f0d6,u+f0e4,u+f0ec,u+f10a-f10b,u+f123,u+f13e,u+f148-f149,u+f14c,u+f156,u+f15e,u+f160-f161,u+f163,u+f175-f178,u+f195,u+f1f8,u+f219,u+f27a}
-      :root{
-        --h1-color: #5c469b;
-        --P-border-c: #6854a1;  
-        --heading-font-family: "Playfair Display", serif;
-        --default-font-family: "Poppins", sans-serif;
-        --box-shadow: 7px 7px 7px rgba(153, 90, 169, 1);
-
-      } 
-      body{
-       text-align: canter ; 
-       background-color: #cdc1ff;
-       background-image: linear-gradient(316deg, #cdc1ff 0%, #e5d9f2 74%);
-       font-family: "Playfair Display", serif;
-      } 
-       .para{
+      /* Global styles */
+        body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        color: #fff;
+        background-color: #121212;
+}
+/* Header section */
+      header {
         display: flex;
-        justify-content: center; 
-        padding-left: 17px;
-       }  
-      .blocks{
-        display: flex;
-        
-        justify-content: space-evenly;
-
-      } 
-      .button{
-        flex-direction: row   ;
-        justify-content: center;
-        border: 2px solid var(--P-border-c);
-        box-shadow: var(--box-shadow);
-        padding: 25px; 
-        border-radius: 4px;
-        background:#e2d0e6;
-        text-decoration: none ;
-        color: black;
-        
-      } 
-      a:imp{
-        text-decoration: none;
-      }   
-      .button:hover{
-        background: #a292cb;
-        color: black;
-        border: black;
-        border-radius: 6px;
-      } 
-      .none {
-        text-decoration: none;
-      } 
-      .none:hover{
-        color: black;  
-        cursor: pointer ;
-        text-emphasis:unset; 
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-      }   
-      .impr{
-        padding: 50px ;
-      }  
-      .tooimp{
-        text-align: center;
-      } 
-      a:link{
-        color: rgb(120, 17, 138);
-        font-family: "Playfair Display", serif;
-        font-size: .9rem ;
-      } 
-      a:visited{
-        color: rgb(96, 16, 110);;
-      }	
-      a:active{
-        color: rgb(120, 17, 138);;
-      } 
-      .padding{
-        margin: 20px auto ;
-      } 
-      .navbar {
-        
-        
-        background: radial-gradient(circle at 10% 20%, rgb(178, 178, 212) 0%, rgb(253, 222, 249) 79.5%);;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #1a1a1a;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       }
-      .navigation-links {
-            display: flex;
-            margin-top: 40px;
-            justify-content: center;
-            color: #686899; 
+      .logo img {
+        height: 39px;
+        max-height: 39px;
+        width: auto;
+        margin-right: 20px;
 
-        }
+        border-radius: 8px;
+      }
+       nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+       }
+      nav ul li {
+        margin-left: 20px;
+      }
 
-        .navigation-links a {
-            margin: 20px;
-            border-radius: 10px;
-            padding: 20px 15px;
-            text-decoration: none;
-            text-transform: capitalize;
-            padding: 20px 50px;
-            color: #3a3a77; 
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #f39c12;
+      }
+      /* Typewriter animation */
+      @keyframes typewriter {
+        from {
+          width: 0;
         }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      .typewriter h1 {
+        overflow: hidden; /* Ensures text stays inside the box */
+        border-right: 2px solid #f5d1d1; /* Creates the blinking cursor */
+        white-space: nowrap; /* Keeps text on one line */
+        animation: typewriter 4s steps(30, end), blink 0.5s step-end infinite;
+        width: 100%;
+        animation-fill-mode: forwards;
+      }
+      .typewriter h1.stop-cursor {
+        border-right: none; /* Remove the blinking cursor */
+        animation: none; /* Stops all animations */
+      }
+      .typewriter h1.done::after {
+        content: "";
+        border-right: none;
+      }
+      /* Hero section */
+      .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(180deg, #111, #333);
+      }
+      .hero h1 {
+        font-size: 8vw;
+        line-height: 1.2;
+        font-weight: 900;
+        color: #f5d1d1;
+        margin: 0;
+      }
+      .hero p {
+        font-size: 1.5vw;
+        margin: 20px 0;
+        color: #aaa;
+      }
+      .hero .cta {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #de8108;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 1.2vw;
+        font-weight: bold;
+      }
+      .hero .cta:hover {
+        background-color: #a16004;
+      }
+      /* Featured Projects section */
+      .projects {
+        padding: 40px 20px;
+        background-color: #1a1a1a;
+        text-align: center;
+      }
+      .projects h2 {
+        font-size: 3vw;
+        margin-bottom: 20px;
+        color: #fff;
+      }
 
-        .contact-link,
-        .about-me-link,
-        .app-links {
-            
-            background-color: #a5a1c9;
-            color: #686899; 
-            font-size: 20px;
-            cursor: pointer;
-            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-        }
+      .project-slider {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      .project-card {
+        background-color: #222;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+      }
 
-        a:hover {
-            border: 2px solid;
-            border-color: #9998d1;
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .project-card .project-info {
+        padding: 20px;
+        text-align: left;
+      }
 
-            background-color: transparent;
-            color: #686899;
-        }
+      .project-card h3 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #fff;
+      }
+      .project-card p {
+        margin: 10px 0;
+        color: #bbb;
+        font-size: 0.9em;
+      }
 
-        a:hover::after {
-            left: 120%;
-            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-        }
-        h1{
-          font-family: "Playfair Display", serif;
-          font-size:  40px;  
-        } 
-        .logo {
-          height: 55px;
-          max-height: 55px;
-          width: auto;
-          margin-right:20px  ;
-          border-radius: 50%;
-        }
-    </style>
+      .project-card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #f39c12;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .project-card a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #111;
+      }
+      footer p {
+        margin: 0;
+        font-size: 14px;
+        color: #777;
+      }
+      </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          MEGHA GHOSH
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                
-                href="index.html"
-                
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                
-                href="about.html"
-                
-                >About me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                
-                href="index.html#work"
-                
-                >My work</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                
-                href="about.html#contact"
-                
-                >Contact me  </a
-              >
-            </li>
-          </ul>
-        </div>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/me.png" alt="Megha Ghosh Logo" />
       </div>
-    </nav>
-  </br> 
-  </br>
- 
-    <h2 class="para" > <img class="logo" src="/images/photos/copy3.png" alt="Girl"  > Hello I am</h2> 
-  </br> 
-    <h1 class="para"><strong>Megha Ghosh</strong></h1>
-  </br> 
-    <h3 class="para"> 👩🏽‍💻 🇮🇳 Software Engineer , based in India</h3>
-    </br> 
-  </br> 
-    <div class="navigation-links">
-      <a href="index.html#work" class="contact-link" >  <div id="imp"> My works </div> </a>  
-      <a href="about.html" class="about-me-link"> About me </a> 
-    </div>
-    </br> 
-    </br>
-    </br> 
-    </br>
-    </br> 
-    </br>
-    </br>
-    </br>
-    <div id="work"> 
-    <div class="container">
-      <div class="row impr">
-        <div class="col-sm-6">
-          <h2>CHAT BOT</h2>
-          <img src="images/chatbot.jpg" alt="chatbot" alt="pizza" style="border-radius: 3%;" class="img-fluid round" />
-        </div>
-        <div class="col-sm-6">
-          <p> Chat bot is created with help of ML neural network tools such as LSTM. The main models used here are sequential, Scalar and soft max. Different layers of LSTM have been used here to bulit the model, the model is trained by facebook Q&A sets. Keras, tensorflow is the main library used here. Model has been trained to 300 epochs to evaluate with very high accuracy. The basics on how to build a chatbot is given accuratly by my model and my code is open sourced on git hub. Use of chatbot is it simulates and processes human conversation. </p>   
-          <div class="navigation-links"><a href="https://github.com/megha-ghosh109/Chat_bot" class="contact-link">Launch chatbot</a> </div>
-        </div>
-      </div>
-    </div> 
-    <div class="container">
-      <div class="row impr">
-        <div class="col-sm-6">
-          
-          <h2>WEATHER APP</h2>  
-          <p>A weather app is a valuable tool that provides users with up-to-date information about atmospheric conditions in a specific location. These applications offer a range of features designed to enhance user experience and help individuals plan their activities based on the weather forecast.</p>  
-          <div class="navigation-links"><a href="https://weather-app-megha-ghosh.netlify.app/" class="contact-link">Weather app</a> </div> 
-        </div>
-        <div class="col-sm-6">
-          <img src="images/weather.png" alt="weather" alt="pizza" style="border-radius: 3%;" class="img-fluid round"/>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row impr">
-        <div class="col-sm-6">
-          <h2>PIZZA APP</h2> 
-          <img src="images/pizza.png" alt="pizza" style="border-radius: 3%;"  class="img-fluid round" />
-        </div>
-        <div class="col-sm-6">
-          
-          <p>This webpage has integrated chatbot in it to order much quickly and appropriately. IT's designed using basic code. This webpage is created by just HTML, CSS and JS the main motive is to show how to create a page for ordering items by different way using simple coding. Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. Sicilian pizzaem is pizza prepared in a manner that originated in Sicily, Italy. </p>     
-          <div class="navigation-links"><a href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/001/355/748/original/Final_project.html?1674933635" class="contact-link">Launch app</a> </div> 
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row impr">
-        <div class="col-sm-6">
-          
-          <h2>BITCOIN STOCK PREDICTION</h2>  
-          <p>In this paper we had used mainly two different types of models. One includes time varying regression models, which is evaluated in the basis of RMSE, MAE and R2 score, and 2nd is our classification model is evaluated on the basis of confusion matrix, precision, recall and f1-score. 
+      <nav>
+        <ul>
+          <li>
+            <a href="#portfolio"><a href="index.html">Home</a></a>
+          </li>
+          <li>
+            <a href="#about"><a href="about.html">About</a></a>
+          </li>
+          <li>
+            <a href="#contact"><a href="index.html#work">My Works</a></a>
+          </li>
+          <li>
+            <a href="#contact"><a href="contact.html">Contact</a></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+     <!-- Hero section -->
 
-            Over the detailed analysis of the models, we can give a well-defined result on the ML model which can predict the bitcoin market trend in the future with highest level of accuracy
-            </p>  
-          <div class="navigation-links"><a href="https://1drv.ms/w/c/bc9210bdfc2f4c0f/EUKmERQzizNIoDMRRn2YCLQBt43pJeeY3LJI6XQZRvGlLw" class="contact-link">Bit-coin prediction</a> </div> 
-        </div>
-        <div class="col-sm-6">
-          <img src="images/bitcoin.png" alt="BITCOIN" alt="pizza" style="border-radius: 3%;" class="img-fluid round"/>
-        </div>
+    <section class="hero">
+      <div class="typewriter">
+        <h1>
+          WELCOME TO
+          <br />
+
+          MY PORTFOLIO
+        </h1>
       </div>
-    </div>
-    </div> 
+        <p>
+        Hi, I am Megha Ghosh. Software Engineer working in Accenture.<br />
+        Web Development | SAP | Data Science | Java
+      </p>
+
+    <a href="index.html#work" class="cta">Explore My Work</a>
+        </section>
+      <!-- Featured Projects section -->
+    <div id="work">
+      <section class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-slider">
+          <div class="project-card">
+            <img src="images/chatbot.jpg" alt="chat bot" />
+            <div class="project-info">
+              <h3>Chat Bot</h3>
+              <p>
+                Chat bot is created with help of ML neural network tools such as
+                LSTM. The main models used here are sequential, Scalar and soft
+                max. Different layers of LSTM have been used here to bulit the
+                model, the model is trained by facebook Q&A sets. Keras,
+                tensorflow is the main library used here. Model has been trained
+                to 300 epochs to evaluate with very high accuracy.
+              </p>
+              <a href="#">
+                <a href="https://github.com/megha-ghosh109/Chat_bot"
+                  >View Details</a
+                ></a
+              >
+               </div>
+          </div>
+          <div class="project-card">
+            <img src="images/weather.png" alt="weather app" />
+            <div class="project-info">
+              <h3>Launch App</h3>
+              <p>
+                A weather app is a valuable tool that provides users with
+                up-to-date information about atmospheric conditions in a
+                specific location. These applications offer a range of features
+                designed to enhance user experience and help individuals plan
+                their activities based on the weather forecast.
+              </p>
+              <a href="#"
+                ><a href="https://weather-app-megha-ghosh.netlify.app/"
+                  >Launch App</a
+                ></a
+              >
+               </div>
+          </div>
+          <div class="project-card">
+            <img src="images/pizzas.png" alt="pizza app" />
+            <div class="project-info">
+              <h3>PIZZA APP</h3>
+              <p>
+                This webpage has integrated chatbot in it to order much quickly
+                and appropriately. IT's designed using basic mark up language.
+                This webpage is created by just HTML, CSS and JS the main motive
+                is to show how to create a page for ordering items by different
+                way using simple coding. Pizza is a dish of Italian origin
+                consisting of a usually round.
+              </p>
+              <a href="#"
+                ><a
+                  href="https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/001/355/748/original/Final_project.html?1674933635"
+                >
+                  Launch App</a
+                ></a
+              >
+              </div>
+          </div>
+          <div class="project-card">
+            <img src="images/bitcoin.png" alt="bit coin" />
+            <div class="project-info">
+              <h3>Bitcoin Stock Prediction Reasearch</h3>
+              <p>
+                In this journal paper we had used mainly two different types of
+                models. One includes time varying regression models, which is
+                evaluated in the basis of RMSE, MAE and R2 score, and 2nd is our
+                classification model is evaluated on the basis of confusion
+                matrix, precision, recall and f1-score.
+              </p>
+              <a href="#"
+                ><a href="https://ieeexplore.ieee.org/document/10829446"
+                  >View Paper</a
+                ></a
+              >
+              </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Megha Ghosh. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
-
-
