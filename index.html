@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Megha Ghosh Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Global styles */
-        body {
+      body {
         margin: 0;
         font-family: "Arial", sans-serif;
         color: #fff;
         background-color: #121212;
-}
-/* Header section */
+      }
+      /* Header section */
       header {
         display: flex;
         justify-content: space-between;
@@ -30,12 +35,12 @@
 
         border-radius: 8px;
       }
-       nav ul {
+      nav ul {
         list-style: none;
         display: flex;
         margin: 0;
         padding: 0;
-       }
+      }
       nav ul li {
         margin-left: 20px;
       }
@@ -75,10 +80,6 @@
         border-right: none; /* Remove the blinking cursor */
         animation: none; /* Stops all animations */
       }
-      .typewriter h1.done::after {
-        content: "";
-        border-right: none;
-      }
       /* Hero section */
       .hero {
         height: 100vh;
@@ -93,11 +94,16 @@
         font-size: 8vw;
         line-height: 1.2;
         font-weight: 900;
-        color: #f5d1d1;
         margin: 0;
+        background: linear-gradient(to right, #ff8ebf, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Poppins", sans-serif; /* Modern professional font */
+        text-transform: uppercase;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional for emphasis */
       }
       .hero p {
-        font-size: 1.5vw;
+        font-size: 2.6vw; /* Increased text size */
         margin: 20px 0;
         color: #aaa;
       }
@@ -172,7 +178,7 @@
         font-weight: bold;
       }
       .project-card a:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       /* Footer */
@@ -186,7 +192,7 @@
         font-size: 14px;
         color: #777;
       }
-      </style>
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -211,25 +217,26 @@
         </ul>
       </nav>
     </header>
-     <!-- Hero section -->
+    <!-- Hero section -->
 
     <section class="hero">
-      <div class="typewriter">
-        <h1>
-          WELCOME TO
-          <br />
-
-          MY PORTFOLIO
-        </h1>
+      <div id="typewriterContainer">
+        <div id="typewriter" class="typewriter">
+          <h1>
+            I AM
+            <br />
+            MEGHA GHOSH
+          </h1>
+        </div>
       </div>
-        <p>
-        Hi, I am Megha Ghosh. Software Engineer working in Accenture.<br />
-        Web Development | SAP | Data Science | Java
+      <p>
+        Hi, I am Megha Ghosh. Software Engineer working in Accenture.<br />Web
+        Development | SAP | Data Science | Java
       </p>
+      <a href="index.html#work" class="cta">Explore My Work</a>
+    </section>
 
-    <a href="index.html#work" class="cta">Explore My Work</a>
-        </section>
-      <!-- Featured Projects section -->
+    <!-- Featured Projects section -->
     <div id="work">
       <section class="projects">
         <h2>Featured Projects</h2>
@@ -251,7 +258,7 @@
                   >View Details</a
                 ></a
               >
-               </div>
+            </div>
           </div>
           <div class="project-card">
             <img src="images/weather.png" alt="weather app" />
@@ -269,7 +276,7 @@
                   >Launch App</a
                 ></a
               >
-               </div>
+            </div>
           </div>
           <div class="project-card">
             <img src="images/pizzas.png" alt="pizza app" />
@@ -290,7 +297,7 @@
                   Launch App</a
                 ></a
               >
-              </div>
+            </div>
           </div>
           <div class="project-card">
             <img src="images/bitcoin.png" alt="bit coin" />
@@ -308,14 +315,34 @@
                   >View Paper</a
                 ></a
               >
-              </div>
+            </div>
           </div>
         </div>
       </section>
-      </div>
+    </div>
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 Megha Ghosh. All Rights Reserved.</p>
     </footer>
+    <script>
+      // Fixing Typewriter Effect Switching
+      function switchText() {
+        const typewriterContainer = document.getElementById("typewriter");
+        typewriterContainer.innerHTML = `<h1>WELCOME &nbsp TO <br/> MY &nbsp PORTFOLIO</h1>`;
+        typewriterContainer.classList.remove("typewriter");
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const typewriterText = document.querySelector(".typewriter h1");
+
+        // Stop the cursor after 4 seconds
+        setTimeout(() => {
+          typewriterText.classList.add("stop-cursor");
+        }, 4000);
+
+        // Switch text to "WELCOME TO" + <br/> + " to My Portfolio" after 4 seconds
+        setTimeout(switchText, 4000);
+      });
+    </script>
   </body>
 </html>
