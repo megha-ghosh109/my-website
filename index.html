@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       /* Global styles */
@@ -23,16 +22,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 40px;
+        padding: 20px 35px;
         background-color: #1a1a1a;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       }
       .logo img {
-        height: 39px;
-        max-height: 39px;
+        height: 40px;
+        max-height: 40px;
         width: auto;
         margin-right: 20px;
-
         border-radius: 8px;
       }
       nav ul {
@@ -44,7 +42,6 @@
       nav ul li {
         margin-left: 20px;
       }
-
       nav ul li a {
         text-decoration: none;
         color: #fff;
@@ -69,20 +66,20 @@
         }
       }
       .typewriter h1 {
-        overflow: hidden; /* Ensures text stays inside the box */
-        border-right: 2px solid #f5d1d1; /* Creates the blinking cursor */
-        white-space: nowrap; /* Keeps text on one line */
+        overflow: hidden;
+        border-right: 2px solid #f5d1d1;
+        white-space: nowrap;
         animation: typewriter 4s steps(30, end), blink 0.5s step-end infinite;
         width: 100%;
         animation-fill-mode: forwards;
       }
       .typewriter h1.stop-cursor {
-        border-right: none; /* Remove the blinking cursor */
-        animation: none; /* Stops all animations */
+        border-right: none;
+        animation: none;
       }
       /* Hero section */
       .hero {
-        height: 100vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -98,12 +95,12 @@
         background: linear-gradient(to right, #ff8ebf, #ffffff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: "Poppins", sans-serif; /* Modern professional font */
+        font-family: "Poppins", sans-serif;
         text-transform: uppercase;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Optional for emphasis */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
       }
       .hero p {
-        font-size: 2.6vw; /* Increased text size */
+        font-size: 2.6vw;
         margin: 20px 0;
         color: #aaa;
       }
@@ -192,6 +189,63 @@
         font-size: 14px;
         color: #777;
       }
+      /* Logo1 styles */
+      .logo1 {
+        position: relative;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 4rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo1::before,
+      .logo1::after {
+        content: "<";
+        font-size: 5rem;
+        color: #de8108;
+        position: absolute;
+        animation: bracket-blink 2s infinite;
+      }
+      .logo1::after {
+        content: ">";
+        right: -70px;
+        transform: rotateY(180deg);
+        animation-delay: 1s;
+      }
+      .logo1::before {
+        left: -70px;
+      }
+      .text {
+        animation: text-glow 1.5s infinite alternate;
+      }
+      @keyframes text-glow {
+        from {
+          text-shadow: 0 0 10px #de8108, 0 0 20px #f28510;
+        }
+        to {
+          text-shadow: 0 0 30px #f28510, 0 0 60px #de8108;
+        }
+      }
+      @keyframes bracket-blink {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+        25%,
+        75% {
+          opacity: 0.5;
+        }
+      }
+      /* Media query to show logo1 only on mobile screens */
+      @media screen and (min-width: 769px) {
+        .logo1 {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -202,24 +256,18 @@
       </div>
       <nav>
         <ul>
-          <li>
-            <a href="#portfolio"><a href="index.html">Home</a></a>
-          </li>
-          <li>
-            <a href="#about"><a href="about.html">About</a></a>
-          </li>
-          <li>
-            <a href="#contact"><a href="index.html#work">My Works</a></a>
-          </li>
-          <li>
-            <a href="#contact"><a href="contact.html">Contact</a></a>
-          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#work">My Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!-- Hero section -->
-
     <section class="hero">
+      <div class="logo1">
+        <span class="text">MG</span>
+      </div>
       <div id="typewriterContainer">
         <div id="typewriter" class="typewriter">
           <h1>
@@ -235,7 +283,6 @@
       </p>
       <a href="index.html#work" class="cta">Explore My Work</a>
     </section>
-
     <!-- Featured Projects section -->
     <div id="work">
       <section class="projects">
@@ -263,7 +310,7 @@
           <div class="project-card">
             <img src="images/weather.png" alt="weather app" />
             <div class="project-info">
-              <h3>Launch App</h3>
+              <h3>Weather App</h3>
               <p>
                 A weather app is a valuable tool that provides users with
                 up-to-date information about atmospheric conditions in a
@@ -281,7 +328,7 @@
           <div class="project-card">
             <img src="images/pizzas.png" alt="pizza app" />
             <div class="project-info">
-              <h3>PIZZA APP</h3>
+              <h3>Pizza App</h3>
               <p>
                 This webpage has integrated chatbot in it to order much quickly
                 and appropriately. IT's designed using basic mark up language.
